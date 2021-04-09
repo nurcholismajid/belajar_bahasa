@@ -105,7 +105,7 @@ int main()
 	cout << a << " - " << b << " = " << hasil << endl;
 
 	// perkalian
-	hasil = a \* b;
+	hasil = a * b;
 	cout << a << " x " << b << " = " << hasil << endl;
 
 	// pembagian
