@@ -120,3 +120,110 @@ int main()
 
 }
 ```
+
+#### Operator Komparasi
+Diguanakan untuk membandingkan sebuah nilai, contohnya :
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main()
+{
+
+	// Komparasi
+	int a = 2;
+	int b = 3;
+
+	// deklarasi bool
+	bool hasil;
+
+	/* Operator perbandingan
+	jika nilainya 0 itu false
+	jika nilainya 1 itu true */
+
+	// Sebanding
+	hasil = (a == b);
+	cout << hasil << endl;
+
+	// Tidak sebanding
+	hasil = (a != b);
+	cout << hasil << endl;
+
+	// Lebih kecil
+	hasil = (a < b);
+	cout << hasil << endl;
+
+	// Lebih besar
+	hasil = (a > b);
+	cout << hasil << endl;
+
+	// Lebih kecil atau sebanding
+	hasil = (a <= b);
+	cout << hasil << endl;
+
+	// Lebih besar atau sebanding
+	hasil = (a >= b);
+	cout << hasil << endl;
+	cout << sizeof(short);
+
+	return 0;
+
+}
+```
+
+#### Operator Logika
+Sama seperti operator komparasi, tetapi biasanya operator logika digunakan ketika memiliki value yang banyak dan pingin kita bandingkan. contohnya :
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main(){
+	int a = 3;
+	int b = 2;
+
+	// deklarasi
+	bool hasil;
+
+	// not atau !
+	hasil = !(a == 3);
+	cout << hasil << endl;
+
+	// and atau && jika kedua nilai true maka hasilnya true
+	cout << "Operator AND \\n";
+
+	hasil = (a == 3) and (b == 2);
+	cout << hasil << endl; // true and true
+
+	hasil = (a == 3) and (b == 3);
+	cout << hasil << endl; // true and false
+
+	hasil = (a == 2) && (b == 2);
+	cout << hasil << endl; // false and true
+
+	hasil = (a == 4) && (b == 4);
+	cout << hasil << endl; // false and false
+
+	// or atau || jika kedua nilai false maka hasilnya false
+	cout << "Operator OR \\n";
+
+	hasil = (a == 3) or (b == 2);
+	cout << hasil << endl; // true or true
+
+	hasil = (a == 3) or (b == 3);
+	cout << hasil << endl; // true or false
+
+	hasil = (a == 2) || (b == 2);
+	cout << hasil << endl; // false or true
+
+	hasil = (a == 4) || (b == 4);
+	cout << hasil << endl; // false or false
+
+	hasil = !((a == 4) and (b == 4));
+	cout << hasil << endl;
+
+	return 0;
+
+}
+```
